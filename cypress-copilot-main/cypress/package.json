@@ -1,0 +1,21 @@
+{
+  "name": "cypress-testing-environment",
+  "version": "1.0.0",
+  "description": "Cypress testing environment for login, registration, profile management, and cart functionalities",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:open:electron": "cypress open --browser electron",
+    "cy:open:chrome": "cypress open --browser chrome",
+    "cy:run": "cypress run",
+    "cy:run:electron": "cypress run --browser electron",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "test": "cypress run --spec 'cypress/e2e/features/**/*.feature'",
+    "test:electron": "cypress run --browser electron --spec 'cypress/e2e/features/**/*.feature'",
+    "test:chrome": "cypress run --browser chrome --spec 'cypress/e2e/features/**/*.feature'"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.2.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.7",
+    "cypress": "^15.4.0"
+  }
+}

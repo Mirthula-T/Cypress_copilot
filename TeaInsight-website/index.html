@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"> -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+ <style>
+    body{
+          font-family: "Poppins", sans-serif;
+    }
+     
+
+ </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-info" href="#">TeaInsight</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#newproduct">New Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+
+            <form class="d-flex mb-4" role="search" onsubmit="return false;">
+      <input id="searchInput" class="form-control me-2" type="search" placeholder="Search tea powder" aria-label="Search">
+      <button class="btn btn-outline-success" type="button" onclick="searchTea()">Search</button>
+      </form>
+
+          </div>
+        </div>
+      </nav>
+      <!-- img -->
+       <div class="container-fluid" id="home">
+        <div class="row">
+            <div class="col-lg-12 text-center m-auto">
+                  <img src="Teapowders\Home.jpg" alt="" width="100%" >
+
+            </div>
+
+        </div>
+
+       </div>
+       <div class="container-fluid" id="about">
+        <div class="row">
+          <div class="col-lg-12 text-center m-auto p-4">
+            <h2 class="bg-info">About us</h2>
+            <p class="px-1 text-center">
+              <h4>Welcome to TeaInsight </h4>
+              
+            </p>
+            <p class="px-1 text-center">
+              At TeaInsight, we are passionate about bringing the world of tea closer to you. Whether you're a seasoned tea connoisseur or just beginning your journey into the rich flavors and health benefits of tea, our platform is designed to provide you with everything you need to know.
+              
+            </p>
+           <p class="px-1 text-center">
+              <h4>Our Mission</h4>
+              We aim to be your go-to resource for discovering a wide range of teas, their origins, and their unique health benefits. Our goal is to help tea lovers make informed choices by offering well-researched content and detailed descriptions of each tea variety.
+            </p>
+            <p class="px-1 text-center"> <h4>What We Offer</h4>
+               Tea Varieties - Explore different types of tea, from classic black and green teas to herbal infusions and rare blends.
+               Health Benefits - Learn about the wellness benefits of various teas and how they can enhance your daily routine.
+               Origins & Culture - Understand the history, cultivation, and cultural significance of teas from around the world.
+               Easy Shopping - Found a tea you Want? Simply click the “Buy on Amazon” button and seamlessly purchase it online.
+              </p>
+                <p class="px-1 text-center"> 
+                  <h4>Why Choose TeaInsight?</h4>
+              Comprehensive Tea Guide - All the information you need in one place.
+               User-Friendly Experience - Navigate easily and find your favorite teas effortlessly.
+               Trusted Links - We connect you directly to Amazon for secure and reliable purchases.
+                </p>
+                <p class="px-1 text-center">
+                  Join Us on This Tea Journey!
+                  Tea is more than just a beverage - it's an experience. At TeaInsight, we bring you closer to that experience, helping you explore the wonderful world of tea, one sip at a time.
+                  
+                  Enjoy your tea journey with us! ☕
+                </p>
+          </div>
+        </div>
+       </div>
+       <div class="container-fluid" id="products">
+        <div class="row">
+            <div class="col-lg-12 text-center m-auto">
+           <h2 class="">Produts</h2>
+
+            </div>
+        </div>
+       </div>
+       <div class="container-fluid">
+        <div class="row p-3">
+            <div class="col-lg-3 text-center">
+           <img src="Teapowders/green-tea-powder.jpg" alt="" width="200px" height="240px">
+           <h3>Green Tea</h3>
+            <p class="px-2 text-center">
+              Green tea is a popular drink with a fresh taste and green colour. People all over the world enjoy it for its health benefits.
+              Green is the one of the best tea.
+            </p>
+            <button class="btn btn-primary" onclick="showDetails('Green Tea')">View</button>
+            <!-- <div class="product-details mt-2" style="display: none;"></div> -->
+          </div>
+            <div class="col-lg-3 text-center m-auto">
+                <img src="Teapowders\Chamomiletea.jpg" alt="" width="210px">
+                <h3>Chamomile Tea</h3>
+                 <p class="px-1 text-center">
+                  Chamomile tea, known for its calming properties, is a soothing herbal infusion enjoyed for its gentle flavour
+                  and relaxation benefits.
+                 </p>
+                 <button class="btn btn-primary" onclick="showDetails('Chamomile Tea')">View</button>
+                     
+                 </div>
+                 <div class="col-lg-3 text-center m-auto">
+                    <img src="Teapowders\Black-tea.jpg" alt="" width="200px" height="240px">
+                    <h3>Black Tea</h3>
+                     <p class="px-2 text-center">
+                      Black tea is a classic beverage appreciated for its bold flavour and 
+                      making it a popular choice among tea enthusiasts worldwide.
+                     </p>
+                     <button class="btn btn-primary" onclick="showDetails('Black Tea')">View</button>
+                         
+                     </div>
+                     <div class="col-lg-3 text-center m-auto">
+                    <img src="Teapowders\Herbal-tea.jpg" alt="" width="200px" height="235px">
+                    <h3>Herbal Tea</h3>
+                     <p class="px-2 text-center">
+                      Herbal tea, also known as herbal infusion, 
+                      is a caffeine-free beverage crafted from dried flowers, herbs, spices, and fruits, offering a refreshing.
+                     </p>
+                     <button class="btn btn-primary"  onclick="showDetails('Herbal Tea')">View</button>
+                         
+                     </div>
+                     </div>
+       </div>
+       <div class="container-fluid">
+        <div class="row p-3">
+            <div class="col-lg-3 text-center m-auto">
+           <img src="Teapowders\Matcha-tea.jpg" alt="" width="200px" height="200px">
+           <h3>Matcha Tea</h3>
+            <p class="px-2 text-center"> 
+              Matcha tea is a vibrant and flavourful 
+              Japanese green tea powder known for its unique preparation method and rich, grassy taste, offering a refreshing and energizing beverage.
+            </p>
+            <button class="btn btn-primary" onclick="showDetails('Matcha Tea')">View</button>
+                
+            </div>
+            <div class="col-lg-3 text-center m-auto">
+                <img src="Teapowders\White-tea.jpg" alt="" width="200px">
+                <h3>White Tea</h3>
+                 <p class="px-2 text-center">
+                  White tea is a delicate and subtle tea variety made from young tea leaves and buds, prized for its mild flavour and delicate aroma, 
+                  offering a gentle and refreshing drinking experience.
+                    </p>
+                 <button class="btn btn-primary" onclick="showDetails('White Tea')">View</button>
+                     
+                 </div>
+                 <div class="col-lg-3 text-center m-auto">
+                    <img src="Teapowders\Masala-tea.jpg" alt="" width="205px">
+                    <h3>Masala Tea</h3>
+                     <p class="px-2 text-center">
+                      Masala chai is a aromatic Indian tea blend, 
+                      infused with a rich combination of spices and herbs, offering a warm and comforting beverage enjoyed throughout India and beyond.
+                         </p>
+                     <button class="btn btn-primary" onclick="showDetails('Masala Tea')">View</button>
+                         
+                     </div>
+                     <div class="col-lg-3 text-center m-auto">
+                    <img src="Teapowders\Darjeeling-tea.jpg" alt="" width="200px">
+                    <h3>Darjeeling Tea</h3>
+                     <p class="px-2 text-center">
+                      Darjeeling tea is a prized Indian tea renowned for its 
+                      unique flavour and exquisite aroma, often referred to as the “Champagne of Teas” for its unparalleled quality and elegance.
+                       </p>
+                     <button class="btn btn-primary" onclick="showDetails('Darjeeling Tea')">View</button>
+                         
+                     </div>
+                     </div>
+       </div>
+       <div class="container-fluid">
+        <div class="row p-3">
+            <div class="col-lg-3 text-center m-auto">
+           <img src="Teapowders\Irani-chai.jpg" alt="" width="200px" height="230px">
+           <h3>Irani Chai</h3>
+            <p class="px-2 text-center">
+              Irani tea is a rich and aromatic tea blend originating from 
+              Iran and popularized in India, known for its strong flavour and cultural significance in Iranian and Indian communities.
+               </p>
+            <button class="btn btn-primary" onclick="showDetails('Irani Chai')">View</button>
+                
+            </div>
+            <div class="col-lg-3 text-center m-auto">
+                <img src="Teapowders\Oolong-tea.jpg" alt="" width="200px" height="230px">
+                <h3>Oolong Tea</h3>
+                 <p class="px-2 text-center">
+                  Oolong tea is a semi-oxidized tea with a unique flavour profile, falling between green and black tea, celebrated for its complex taste and numerous health benefits.
+
+
+
+         </p>
+                 <button class="btn btn-primary" onclick="showDetails('Oolong Tea')">View</button>
+                     
+                 </div>
+                 <div class="col-lg-3 text-center m-auto">
+                    <img src="Teapowders\Lemongrass-tea.jpg" alt="" width="200px" height="230px">
+                    <h3>Lemongrass Tea</h3>
+                     <p class="px-2 text-center">
+                      Lemongrass tea is a refreshing herbal infusion made from the leaves of
+                       the lemongrass plant, prized for its citrusy flavour and numerous health benefits and it is good for health.
+                        </p>
+                     <button class="btn btn-primary" onclick="showDetails('Lemongrass Tea')">View</button>
+                         
+                     </div>
+                     <div class="col-lg-3 text-center m-auto">
+                    <img src="Teapowders\tandoori-chai.jpg" alt="" width="200px" height="230px">
+                    <h3>Tandoori Chai</h3>
+                     <p class="px-2 text-center">
+                      Tandoori chai is a unique and flavourful tea preparation, where tea is brewed in a clay pot,
+                       imparting a smoky flavour, popular in India for its distinct taste and cultural significance.
+                        </p>
+                     <button class="btn btn-primary" onclick="showDetails('Tandoori Chai')">View</button>
+                         
+                     </div>
+                     </div>
+       </div>
+       <div class="container-fluid">
+        <div class="row p-3">
+            <div class="col-lg-3 text-center m-auto">
+           <img src="Teapowders\Lemon-tea.jpg" alt="" width="200px" height="210px">
+           <h3>Lemon Tea</h3>
+            <p class="px-2 text-center">
+                Lemon tea is a low-sugar, low-calorie way to add a range of vitamins and minerals to your diet. Grating lemon zest into your tea. 
+            </p>
+            <button class="btn btn-primary" onclick="showDetails('Lemon Tea')">View</button>
+                
+            </div>
+            <div class="col-lg-3 text-center m-auto">
+                <img src="Teapowders\peach-tea.jpg" alt="" width="200px" height="210px">
+                <h3>Peach Tea</h3>
+                 <p class="px-2 text-center">
+                  Peach tea is a refreshing beverage infused with the sweet and juicy 
+                 flavour of ripe peaches, offering a delightful and fruity twist to traditional tea.
+                    </p>
+                 <button class="btn btn-primary" onclick="showDetails('Peach Tea')">View</button>
+                     
+                 </div>
+                 <div class="col-lg-3 text-center m-auto">
+                    <img src="Teapowders\rooibos-tea.jpg" alt="" width="200px" height="210px">
+                    <h3>Rooibos Tea</h3>
+                     <p class="px-2 text-center">
+                      Rooibos tea, also known as red bush tea, is a caffeine-free herbal infusion originating from South Africa, celebrated 
+                      for its smooth flavour.
+                         </p>
+                     <button class="btn btn-primary" onclick="showDetails('Rooibos Tea')">View</button>
+                    </div>
+                     <div class="col-lg-3 text-center m-auto">
+                    <img src="Teapowders\Nilgiri-tea.jpg" alt="" width="200px" height="210px">
+                    <h3>Nilgiri Tea</h3>
+                     <p class="px-2 text-center">
+                      Nilgiri tea, originating from the Nilgiri hills of southern India,
+                       is a fragrant and flavourful tea variety renowned for its briskness and versatility.
+                    </p>
+                     <button class="btn btn-primary" onclick="showDetails('Nilgiri Tea')">View</button>
+                         
+                     </div>
+                     
+       </div>
+       </div>
+       <!-- new product
+        <div class="container mt-5" id="newproduct">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="Newproduct.jpg" alt="" width="200px">
+                </div>
+                <div class="col-lg-6">
+               <h2>Ginger Tea</h2>
+
+               <p class="fs-6">
+                Ginger tea is a warm, aromatic beverage made by steeping fresh or dried ginger root in hot water. It has a slightly spicy and invigorating flavor, 
+                with a hint of natural sweetness. The golden-hued tea is often enjoyed for its soothing properties and health benefits, 
+                making it a popular choice in various cultures around the world.
+                </p>
+                </div>
+            </div>
+        </div> -->
+        <!-- Location contact -->
+         <!-- <div class="container" id="contact"> -->
+            <!-- <div class="row"> -->
+                <!-- <div class="col-lg-6 text-center m-auto" > -->
+                    <!-- <h2>Location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125322.50873824842!2d76.967235!3d11.013968899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1741241990049!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-6 bg-info">
+                    <h2 class="text-center m-auto">Feedback form</h2>
+                    <div class="mb-3 p-2"> -->
+                        <!-- <h2 class="text-center m-auto bg-light">Fill the Form</h2> -->
+                        <!-- <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                      </div>
+                    <div class="mb-3 p-2">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com">
+                      </div>
+                      <div class="mb-3 p-2">
+                        <label for="exampleFormControlTextarea1" class="form-label">Any suggestions</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <div class="mb-3 p-2">
+                        <label for="exampleFormControlInput1" class="form-label">Phone number</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="3245767834">
+                      </div>
+                      <div class="mb-3  text-center">
+                       <button class="p-1 m-auto fs-4 bg-primary border-0">submit</button>
+                      </div>
+                      </div>
+            </div>
+         </div> -->
+            <section id="contact" class="container mt-5">
+  <h2 class="text-center mb-4">Contact Us</h2>
+
+  <!-- Contact Number Display -->
+ <div class="container my-5">
+  <div class="p-4 text-center rounded" style="background-color: #f8f9fa; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <p class="mb-2"><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+    <p><strong>Email:</strong> <a href="mailto:teainsight@gmail.com">teainsight@gmail.com</a></p>
+  </div>
+</div>
+  
+  
+  <div class="row">
+    <!-- Google Map -->
+    <div class="col-md-6 mb-4">
+      <h5>Our Location</h5>
+      <div class="embed-responsive embed-responsive-4by3">
+        <iframe 
+          class="embed-responsive-item" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119121.65993784422!2d76.88483286798547!3d11.01395778797012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1754315077302!5m2!1sen!2sin" 
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Feedback Form -->
+    <div class="col-md-6">
+      <h5>Send Us Feedback</h5>
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Write your feedback here" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- footer -->
+  <div class="container-fluid bg-dark m-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <h4 class="text-center text-white fs-6">All copy Rights Reserved@TeaInsight</h4>
+
+        </div>
+
+    </div>
+  </div>
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="teaModal" tabindex="-1" aria-labelledby="teaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="teaModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="teaModalBody"></div>
+      <div class="modal-footer">
+        <a id="buyLink" href="#" target="_blank" class="btn btn-primary">Buy on Amazon</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
